@@ -3,17 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OOP Game</title>
+    <title>Game</title>
+    <link rel="stylesheet" href="./css/style.css">
 
-    <link rel="stylesheet" href="./css/main.css">
+
 
 </head>
 <body>
-    
-    <h1>OOP Game Codealong</h1>
+
+    <div class="container">
+        <div class="hangman-box">
+
+            <img src="/images/hangman-0.jpeg" alt="Hangman image">
+
+            <h1 class="hangman-box-text">HANGMAN</h1>
+
+
+        </div>
+
+        <div class="word-box">
+
+            <ul class="word-display">
+
+            </ul>
+
+            <h3 class="hint-text"> HINT: </h3>
+                <p id="hint"> hint of the word </p>
+            <h3 class="guesses-text"> GUESSES: </h3>
+                <p id="guesses"> 0 of 5 </p>
+
+            <ul class="word-display">
+
+            </ul>
+
+            <div class="keyboard">
+
+
+            </div>
+
+
+        </div>
 
 
 
+
+    </div>
+     
+
+
+    <script src="./js/words-library.js"></script>
     <script src="./js/main.js"></script>
 
 </body>
