@@ -31,7 +31,7 @@ const wordList = [
     },
 
     {
-        word: "Ananas",
+        word: "ananas",
         hint: "For Italians, an absolute no-no when it comes to pizza"
     },
     
@@ -41,7 +41,7 @@ const wordList = [
     },
 
     {
-        word: "Llama",
+        word: "llama",
         hint: "Drama queen of the Andes"
     },
 
