@@ -14,10 +14,11 @@ body {
 }
 
 .container {
-    background-color: rgb(247, 244, 239);
+    background-color: rgb(253, 251, 248);
     display: flex;
     width: fit-content;
-    padding: 70px 60px;
+    padding: 80px 60px;
+    margin-top: 100px;
     border-radius: 2px;
     align-items: flex-end;
     gap: 70px;
@@ -36,6 +37,7 @@ body {
     margin-top: 0px;
     font-size: 45px;
     text-align: center;
+    display: flex;
 
 }
 
@@ -58,22 +60,26 @@ body {
     width: 28px;
     border-bottom: 3px solid #282829;
     font-weight: 500;
+    font-size: 28px;
     text-align: center;
     margin-bottom: 40px;
     gap: 9px;
     text-transform: uppercase;
+    color: rgb(205, 140, 255);
 }
 
 
 .letter-guessed {
     width: 28px;
     border-bottom: 3px solid #282829;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 28px;
     text-align: center;
     margin-bottom: 40px;
     gap: 8px;
     text-transform: uppercase;
     border-color: transparent;
+    color: rgb(205, 140, 255);
 
 }
 
@@ -81,6 +87,7 @@ body {
 .hint-text {
     text-align: center;
     font-weight: 500;
+    font-size: 18px;
     margin-bottom: 15px;
 
 }
@@ -89,21 +96,26 @@ body {
 .guesses-text {
     text-align: center;
     font-weight: 500;
+    font-size: 18px;
     margin-bottom: 15px;
 
 }
 
 #hint {
     text-align: center;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 40px;
+    letter-spacing: 0.08em;
 }
 
 
 #guesses {
     text-align: center;
     font-weight: 500;
+    font-size: 22px;
     margin-bottom: 15px;
-    color: rgb(255, 23, 104);
+    color: rgb(255, 102, 155);
 
 }
 
@@ -114,6 +126,10 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 40px;
+    width: 53%;
+    align-items: center;
+    margin: auto;
+    
     
     
 }
@@ -139,3 +155,28 @@ body {
 
 }
 
+.game-outcome {
+
+    background-color: rgb(255 255 254);
+    display: flex;
+    width: fit-content;
+    padding: 60px 60px;
+    margin-top: 100px;
+    border-radius: 2px;
+    align-items: flex-end;
+
+}
+
+
+
+.play-again {
+    display: flex;
+    justify-content: center;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    
+
+
+}

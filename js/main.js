@@ -8,7 +8,56 @@ const keyboardDiv = document.querySelector(".keyboard");
 
 let currentWord;
 let wrongGuessCount = 0;
+let correctGuessCount = 0;
 const maxGuesses = 5;
+
+
+
+const wordList = [
+
+    {
+        word: "pizza",
+        hint: "Luis's favorite food"
+    },
+
+    {
+        word: "tequila",
+        hint: "if life gives you lemons ask for salt and ..."
+    },
+
+    {
+        word: "banana",
+        hint: "A fruit that's yellow and quite a-peeling"
+    },
+
+    {
+        word: "Ananas",
+        hint: "For Italians, an absolute no-no when it comes to pizza"
+    },
+    
+    {
+        word: "bug",
+        hint: "You don't want it in your bed, and you don't want it in your code"
+    },
+
+    {
+        word: "Llama",
+        hint: "Drama queen of the Andes"
+    },
+
+    {
+        word: "socks",
+        hint: "These have a tendency to magically disappear in the laundry"
+    },
+
+    {
+        word: "coffee",
+        hint: "The reason for adulting before 9 a.m"
+    },
+
+
+    
+];
 
 
 
@@ -57,26 +106,50 @@ const initGame = (button, clickedLetter) => {
     } else {
         handleWrongGuess();
     }
+    
+    if (wrongGuessCount > maxGuesses){
+        location.href = "./game-over.html"
+        
+    } 
+   // if () {
+     //   location.href = "./game-win.html"
+
+//}
+
+
+
     button.disabled = true;
     updateGuessesText();
 
 };
 
+const checkIfWon = (word) => {
+    let result = false;
+    if (correctGuessCount == word.length) result = true;
+    return result
+}
+
 const handleCorrectGuess = (letter) => {
     for (let i = 0; i < currentWord.length; i++) {
         if (currentWord[i] === letter) {
-
             const letterElement = wordDisplay.querySelectorAll("li")[i];
             letterElement.innerText = letter;
             letterElement.classList.add("guessed");
-
+            correctGuessCount++;
         }
+    }
+    
+    console.log(checkIfWon(currentWord))
+
+    if (checkIfWon(currentWord)) {
+                location.href = "./game-win.html"
+
     }
 };
 
 const handleWrongGuess = () => {
     wrongGuessCount++;
-    hangmanImage.src = `/images/hangman-${wrongGuessCount}.jpeg`;
+    hangmanImage.src = `./images/hangman-${wrongGuessCount}.jpeg`;
 };
 
 const updateGuessesText = () => {
