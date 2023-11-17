@@ -9,8 +9,15 @@ Game built with html, css and javascript.
 
 ## How to play
 
-remember the good old days of hangman? when all you needed was a scrap of paper and a pen?
-use the keyboard to guess the letters one by one before the poor guy gets hanged.
+remember the good old days of hangman? when all you needed was a scrap of paper and a pen? use the keyboard to guess the letters one by one before the poor guy gets hanged.
+
+
+![Alt text](Hangman-game.jpeg)
+
+
+## Demo
+
+https://camilaflorez-dev.github.io/hangman/
 
 
 ## MVP'S

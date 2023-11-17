@@ -16,8 +16,8 @@ const maxGuesses = 5;
 const wordList = [
 
     {
-        word: "pizza",
-        hint: "Luis's favorite food"
+        word: "Guitar",
+        hint: "Strings attached, but no commitment issues"
     },
 
     {
@@ -26,8 +26,8 @@ const wordList = [
     },
 
     {
-        word: "banana",
-        hint: "A fruit that's yellow and quite a-peeling"
+        word: "beethoven",
+        hint: "Deaf genius composer"
     },
 
     {
@@ -35,19 +35,15 @@ const wordList = [
         hint: "For Italians, an absolute no-no when it comes to pizza"
     },
     
+
     {
-        word: "bug",
-        hint: "You don't want it in your bed, and you don't want it in your code"
+        word: "ghostbusters",
+        hint: "Who you gonna call? 🎶"
     },
 
     {
-        word: "llama",
-        hint: "Drama queen of the Andes"
-    },
-
-    {
-        word: "socks",
-        hint: "These have a tendency to magically disappear in the laundry"
+        word: "dali",
+        hint: "Surrealist mustache maestro"
     },
 
     {
@@ -55,8 +51,30 @@ const wordList = [
         hint: "The reason for adulting before 9 a.m"
     },
 
+    {
+        word: "everest",
+        hint: "Earth's highest peak, touching the sky"
+    },
 
+    {
+        word: "queen",
+        hint: "British rock royalty"
+    },
+
+    {
+        word: "metallica",
+        hint: "Master of puppets and heavy riffs"
+    },
     
+    {
+        word: "nirvana",
+        hint: "Smells like teen spirit"
+    },
+
+    {
+        word: "matrix",
+        hint: "Red pill or blue pill"
+    },
 ];
 
 

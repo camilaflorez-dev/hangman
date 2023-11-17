@@ -139,7 +139,7 @@ body {
     color: rgb(255, 255, 255);
     font-size: small;
     font-weight: 500;
-    background-color: black;
+
     border-radius: 200px;
     outline: none;
     padding: 8px;
@@ -180,3 +180,65 @@ body {
 
 
 }
+
+
+.play-again-button {
+    background-color: #e97f62;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.play-again-button:hover {
+    background-color: #e78f77;
+}
+
+
+
+.game-outcome .play-again-win {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 18px; /* Adjust the margin as needed */
+}
+
+.game-outcome .play-again-win button {
+    background-color: #e97f62;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.game-outcome .play-again-win button:hover {
+    background-color: #e78f77;
+    text-decoration: none;
+}
+
+
+.keyboard button {
+    color: #fff;
+    font-size: 18px;
+    background-color: rgb(227, 227, 226);
+    border: none;
+    border-radius: 2px;
+    margin: 2px;
+    padding: 6px 9px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.keyboard button:hover {
+    background-color: rgb(202, 202, 202);
+}
+
+
+
